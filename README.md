@@ -19,7 +19,7 @@ ___
     1.1.5.1 Robusto.
     1.1.5.1 Fácil controle(Usabilidade).
     1.1.5.1 Simplicidade.
-    1.1.5.1 Completude de não importantes(Este ponto não fica claro na fonte de origem do testo, e não encontrei signifícado aparente).
+    1.1.5.1 Completude de não importantes(Este ponto não fica claro na fonte de origem do texto, e não encontrei signifícado aparente).
   
   1.1.6 Em 1975 o DSS Braindaid, projetado para suporte a tomada de decisão relacionadas a produtos, promoções campanhas publicitárias, e escolha de preços. Teve sua participação no desenvolvimentos de linguagens de modelagem de marketing Express.
   
