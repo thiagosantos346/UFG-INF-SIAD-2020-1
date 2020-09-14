@@ -2,7 +2,7 @@
 Artefatos produzidos nas aulas de Sistemas inteligentes de apoio a decisão, no Instituto de Informatica da Universidade Federal do Estado de Goiás - UFG.
 
 ___
-# 1. Estado da arte dos Sistemas de Apoio à Decisão
+# 1. Estado da arte dos Sistemas de Apoio a Decisão
 
 ## 1.1 Contexto histórico
 
