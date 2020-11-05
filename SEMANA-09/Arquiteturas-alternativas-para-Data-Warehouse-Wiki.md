@@ -73,27 +73,55 @@ Ao projetar o data warehouse de uma empresa, há três tipos principais de arqui
 
 1. Não é adequada para empresas com requisitos de dados complexos e numerosos fluxos de dados.
 
-### Aplicações
-
-O setor de varejo foi pioneiro no uso de data warehouse. Wal-Mart implementou primeiro um banco de dados warehouse em 1990 para apoiar a tomada de decisões sobre dados históricos de vendas. O varejo indústria agora tem décadas de experiência com o uso de data warehouse para oferecer suporte tomada de decisão sobre a seleção do local da loja, mix de produtos, gestão da cadeia de suprimentos, preços de produtos e gerenciamento de fornecedores. Como reconhecimento da demanda no varejo No setor, os principais fornecedores de DBMS (como Oracle, IBM e TeraData) fornecem soluções de data warehouse personalizadas para o setor de varejo.
-
 ![Data Warehouses in Retail](resources/uniquetierArc.png)
 
 ## Duas Camadas
-### Características
-### Vantagens
-### Desvantagens
-### Aplicações
-![Data Warehouses in Retail](resources/towtierArc.png)
-### Três Camadas
+
+ Embora seja mais eficiente no armazenamento e organização de dados, a arquitetura de duas camadas não é escalável. Além disso, ele suporta apenas um número nominal de usuários.
 
 ### Características
+
+1. Divide as fontes de dados tangíveis do próprio armazém.
+2. A transformação é feita por fonte de dados.
+3. Existe clusters de acesso dados por fonte de dado.
+4. A camada de acessoa os usuário, armazena dados consolidados de todas as fontes, e permite recuperar informações através de sistema de consultas.
+
 ### Vantagens
+
+1. Eficiente no armazenamento e organização de dados
+
 ### Desvantagens
-### Aplicações
+
+1. Não é escalável
+2. Suporta apenas um número nominal de usuários.
+
+![SAFTINet Architecture](resources/towtierArc.png)
+
+### Três Camadas
+
+Este é o tipo mais comum de arquitetura moderna de data warehouse.
+
+### Características
+
+1. Camada inferior servidor de banco de dados 
+2. Camada intermediária inclui um Processamento analítico online (OLAP) servidor.
+3. Camada Superior é o nível do cliente, que inclui as ferramentas e a API (Interface de programação de aplicativos) usadas para análises, consultas e relatórios de alto nível de dados.
+
+### Vantagens
+
+1. Produz um fluxo de dados bem organizado.
+2. Informações brutas.
+3. Visões valiosas.
+
+### Desvantagens
+
+1. Complexidade.
+2. Custo.
+
+![Enterprise Data Warehouse Architecture with Staging Area](resources/treetierArc.png)
 
 ## Referências
 
-1.  [www.astera.com/pt/type/blog/data-warehouse-architecture](www.astera.com/pt/type/blog/data-warehouse-architecture) Acesso em 03-11-2020 23:26
-2.  [aws.amazon.com/pt/data-warehouse/](https://aws.amazon.com/pt/data-warehouse/) Acesso em 03-11-2020 23:26
-3.  
+1. [www.astera.com/pt/type/blog/data-warehouse-architecture](www.astera.com/pt/type/blog/data-warehouse-architecture) Acesso em 03-11-2020 23:26.
+2. [aws.amazon.com/pt/data-warehouse/](https://aws.amazon.com/pt/data-warehouse/) Acesso em 03-11-2020 23:26.
+3. Database design, application development, and administration seventh edition michael v. mannino university of colorado, denver.

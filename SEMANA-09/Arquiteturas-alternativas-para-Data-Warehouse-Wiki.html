@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Armazém de dados - Arquiteturas</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="armazém-de-dados---arquiteturas">Armazém de dados - Arquiteturas</h1>
+<h2 id="contexto">Contexto</h2>
+<h3 id="o-que-é-um-armazém-de-dados-">O que é um Armazém de dados :</h3>
+<p>Um data warehouse é projetado especificamente para análises de dados, que envolvem a leitura de grandes quantidades de dados para compreender relações e tendências entre os dados. Um banco de dados é usado para capturar e armazenar dados, como o registro de detalhes de uma transação.</p>
+<ol>
+<li>Repositório central de informações, com objetivo facilitar analise para a tomar decisões mais eficazes.</li>
+<li>Os dados transmitidos de sistemas transacionais, bancos de dados relacionais e de outras fontes para, de tempos em tempos, muito embora pode ser aplicadas outras formas de indicadores de transmissão dos dados.</li>
+<li>Analistas de negócios, engenheiros de dados, cientistas de dados e gestores acessam as informações por meio de ferramentas de inteligência de negócios (BI), clientes SQL e outros aplicativos de análise.</li>
+<li>Analise de dados são indispensáveis para que as organizações(publicas ou privadas) continuem competitivas.</li>
+<li>Relatórios, painéis e análises para extrair insights dos dados, monitorar a performance dos negócios e apoiar a tomada de decisões, são umas possíveis formas de usar as informações provenientes dos armazém de dados.</li>
+<li>Os armazém de dados alimentam, e otimiza e controlam a entrada e saída de dados para garantir eficiência na obtenção das informações.</li>
+</ol>
+<h3 id="o-que-motiva-a-criação-de-um-armazém-de-dados">O que motiva a criação de um armazém de dados</h3>
+<h4 id="preservando-registros-passados">Preservando registros passados</h4>
+<p>A evolução humana está intimamente ligada a escrita, endo em vista que descrever o momento atual, de forma que possa ser revisado no futuro, nos permite não só diminuir caminhos para solução de problemas já conhecidos, mas também de ver padrões que já se repetiram no passado.</p>
+<ol>
+<li>Análise de dados históricos.</li>
+<li>Tomada de decisão adequada.</li>
+</ol>
+<h4 id="avaliação-dos-dados-para-melhor-entender-e-aprimorar-as-operações-corporativas">Avaliação dos dados para melhor entender e aprimorar as operações corporativas</h4>
+<p>Faz parte da natureza organizacional, fazer planejamentos a médio e longo prazo, mas nem sempre é possível fazer isso enquanto a corrida está acontecendo, parar a todo momento para replanejar e validar informações, pode ser algo desgastante por isso se faz sentido armazenar essas informações do curto prazo de forma paralela e assim obter uma nova visão sobre o que é produzido em termos de dados.</p>
+<ol>
+<li>Dados consolidados de várias fontes.</li>
+<li>Qualidade, consistência e precisão de dados.</li>
+<li>Separação do processamento analítico dos bancos de dados transacionais, o que melhora o desempenho dos dois sistemas.</li>
+</ol>
+<h3 id="como-é-construido-um-um-armazém-de-dados">Como é construido um um armazém de dados</h3>
+<h3 id="unificado">Unificado</h3>
+<ol>
+<li>Unifica e integra todos os dados análogos de diferentes bancos de dados de uma maneira coletivamente aceitável, usando a modelagem de dados</li>
+<li>Ele incorpora dados de diversas fontes.</li>
+<li>Deve manter nomenclatura, layout e codificação consistentes para facilitar a análise eficaz dos dados.</li>
+</ol>
+<h3 id="variação-de-tempo">Variação de tempo</h3>
+<ol>
+<li>Armazena dados coletados ao longo de um amplo horizonte de tempo.</li>
+<li>Os dados coletados são identificados com duração de tempo específica, para analises históricas.</li>
+<li>A entrada de novos dados é irreversível, eles não podem ser reestruturados ou alterados.</li>
+</ol>
+<h3 id="não-volatilidade">Não volatilidade</h3>
+<ol>
+<li>Os dados anteriores não são removidos quando novos dados são carregados no armazém de dados.</li>
+<li>Os dados são apenas para leitura apenas.</li>
+<li>Os dados estão em constante atualização.</li>
+</ol>
+<h2 id="as-camadas">As Camadas</h2>
+<p>Uma arquitetura de data warehouse define a organização dos dados e a estrutura de armazenamento. Como os dados devem ser organizados e limpos para serem valiosos, uma arquitetura de data warehouse moderna se concentra na identificação da técnica mais eficaz de extrair informações de dados brutos na área de preparação e convertê-los em uma estrutura consumível simples usando um modelo dimensional que entrega negócios valiosos inteligência.</p>
+<p>Ao projetar o data warehouse de uma empresa, há três tipos principais de arquitetura a serem levados em consideração.</p>
+<h3 id="camada-única">Camada única</h3>
+<h3 id="contexto-histórico">Contexto histórico</h3>
+<h3 id="características">Características</h3>
+<ol>
+<li>Produção de um conjunto denso de dados</li>
+<li>Redução do volume de dados depositados.</li>
+</ol>
+<h3 id="vantagens">Vantagens</h3>
+<ol>
+<li>Eliminar redundâncias</li>
+</ol>
+<h3 id="desvantagens">Desvantagens</h3>
+<ol>
+<li>Não é adequada para empresas com requisitos de dados complexos e numerosos fluxos de dados.</li>
+</ol>
+<p><img src="file:///c:\workspace\UFG\UFG-INF-SIAD-2020-1\SEMANA-09\resources\uniquetierArc.png" alt="Data Warehouses in Retail"></p>
+<h2 id="duas-camadas">Duas Camadas</h2>
+<p>Embora seja mais eficiente no armazenamento e organização de dados, a arquitetura de duas camadas não é escalável. Além disso, ele suporta apenas um número nominal de usuários.</p>
+<h3 id="características-1">Características</h3>
+<ol>
+<li>Divide as fontes de dados tangíveis do próprio armazém.</li>
+<li>A transformação é feita por fonte de dados.</li>
+<li>Existe clusters de acesso dados por fonte de dado.</li>
+<li>A camada de acessoa os usuário, armazena dados consolidados de todas as fontes, e permite recuperar informações através de sistema de consultas.</li>
+</ol>
+<h3 id="vantagens-1">Vantagens</h3>
+<ol>
+<li>Eficiente no armazenamento e organização de dados</li>
+</ol>
+<h3 id="desvantagens-1">Desvantagens</h3>
+<ol>
+<li>Não é escalável</li>
+<li>Suporta apenas um número nominal de usuários.</li>
+</ol>
+<p><img src="file:///c:\workspace\UFG\UFG-INF-SIAD-2020-1\SEMANA-09\resources\towtierArc.png" alt="SAFTINet Architecture"></p>
+<h3 id="três-camadas">Três Camadas</h3>
+<p>Este é o tipo mais comum de arquitetura moderna de data warehouse.</p>
+<h3 id="características-2">Características</h3>
+<ol>
+<li>Camada inferior servidor de banco de dados</li>
+<li>Camada intermediária inclui um Processamento analítico online (OLAP) servidor.</li>
+<li>Camada Superior é o nível do cliente, que inclui as ferramentas e a API (Interface de programação de aplicativos) usadas para análises, consultas e relatórios de alto nível de dados.</li>
+</ol>
+<h3 id="vantagens-2">Vantagens</h3>
+<ol>
+<li>Produz um fluxo de dados bem organizado.</li>
+<li>Informações brutas.</li>
+<li>Visões valiosas.</li>
+</ol>
+<h3 id="desvantagens-2">Desvantagens</h3>
+<ol>
+<li>Complexidade.</li>
+<li>Custo.</li>
+</ol>
+<p><img src="file:///c:\workspace\UFG\UFG-INF-SIAD-2020-1\SEMANA-09\resources\treetierArc.png" alt="Enterprise Data Warehouse Architecture with Staging Area"></p>
+<h2 id="referências">Referências</h2>
+<ol>
+<li><a href="www.astera.com/pt/type/blog/data-warehouse-architecture">www.astera.com/pt/type/blog/data-warehouse-architecture</a> Acesso em 03-11-2020 23:26.</li>
+<li><a href="https://aws.amazon.com/pt/data-warehouse/">aws.amazon.com/pt/data-warehouse/</a> Acesso em 03-11-2020 23:26.</li>
+<li>Database design, application development, and administration seventh edition michael v. mannino university of colorado, denver.</li>
+</ol>
+
+    </body>
+    </html>
