@@ -58,7 +58,6 @@ Ao projetar o data warehouse de uma empresa, há três tipos principais de arqui
 
 ### Camada única
 
-
 ### Contexto histórico
 
 ### Características
@@ -76,30 +75,21 @@ Ao projetar o data warehouse de uma empresa, há três tipos principais de arqui
 
 ### Aplicações
 
-## Duas Camadas
+O setor de varejo foi pioneiro no uso de data warehouse. Wal-Mart implementou primeiro um banco de dados warehouse em 1990 para apoiar a tomada de decisões sobre dados históricos de vendas. O varejo indústria agora tem décadas de experiência com o uso de data warehouse para oferecer suporte tomada de decisão sobre a seleção do local da loja, mix de produtos, gestão da cadeia de suprimentos, preços de produtos e gerenciamento de fornecedores. Como reconhecimento da demanda no varejo No setor, os principais fornecedores de DBMS (como Oracle, IBM e TeraData) fornecem soluções de data warehouse personalizadas para o setor de varejo.
 
+![Data Warehouses in Retail](resources\uniquetierArc.png)
+
+## Duas Camadas
+### Características
+### Vantagens
+### Desvantagens
+### Aplicações
+![Data Warehouses in Retail](resources\uniquetierArc.png)
 ### Três Camadas
 
-### Contexto histórico
-
 ### Características
-
 ### Vantagens
-
 ### Desvantagens
-
-### Aplicações
-
-## Três Camadas
-
-### Contexto histórico
-
-### Características
-
-### Vantagens
-
-### Desvantagens
-
 ### Aplicações
 
 ## Referências
